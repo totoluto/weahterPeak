@@ -12,7 +12,7 @@ export function MountainListItem({navigation, mountain, stationID}) {
                 styles.root,
             ]}
             onPress={() =>
-                navigation.navigate('MountainDetail', {title: mountain, id: stationID})
+                navigation.navigate('Mountain', {title: mountain, id: stationID})
             }
         >
             <Text style={styles.text}>

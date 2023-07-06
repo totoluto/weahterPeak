@@ -2,16 +2,16 @@ import {StyleSheet,Text, View} from "react-native";
 import theme from "../themes/theme";
 import {MountainListItem} from "./MountainListItem";
 
-export function MountainList(){
+export function MountainList({ navigation }){
     return(
         <View style={styles.container}>
             <Text style={styles.title}>Mountains</Text>
-            <MountainListItem mountain={"Jungfrau"} stationID={"JUN"}/>
-            <MountainListItem mountain={"Finsteraarhorn"} stationID={"JUN"}/>
-            <MountainListItem mountain={"Eiger"} stationID={"JUN"}/>
-            <MountainListItem mountain={"Säntis"} stationID={"SAE"}/>
-            <MountainListItem mountain={"Mont Dolent"} stationID={"ATT"}/>
-            <MountainListItem mountain={"Piz Bernina"} stationID={"COV"}/>
+            <MountainListItem navigation={navigation} mountain={"Jungfrau"} stationID={"JUN"}/>
+            <MountainListItem navigation={navigation} mountain={"Finsteraarhorn"} stationID={"JUN"}/>
+            <MountainListItem navigation={navigation} mountain={"Eiger"} stationID={"JUN"}/>
+            <MountainListItem navigation={navigation} mountain={"Säntis"} stationID={"SAE"}/>
+            <MountainListItem navigation={navigation} mountain={"Mont Dolent"} stationID={"ATT"}/>
+            <MountainListItem navigation={navigation} mountain={"Piz Bernina"} stationID={"COV"}/>
         </View>
     )
 }
