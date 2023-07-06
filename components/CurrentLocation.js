@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         width: 300,
         height: 90,
+        marginBottom: 30
     },
     title: {
         color: theme.colors.secondaryText,

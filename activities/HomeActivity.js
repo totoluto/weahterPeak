@@ -1,10 +1,12 @@
 import {Text, View, StyleSheet} from "react-native";
 import {CurrentData} from "../components/CurrentLocation";
+import {MountainList} from "../components/MountainList";
 
 export default function HomeActivity(){
     return(
         <View style={styles.container}>
             <CurrentData/>
+            <MountainList/>
         </View>
     )
 }
