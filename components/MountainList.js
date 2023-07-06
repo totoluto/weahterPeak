@@ -7,8 +7,8 @@ export function MountainList({ navigation }){
         <View style={styles.container}>
             <Text style={styles.title}>Mountains</Text>
             <MountainListItem navigation={navigation} mountain={"Jungfrau"} stationID={"JUN"}/>
-            <MountainListItem navigation={navigation} mountain={"Finsteraarhorn"} stationID={"JUN"}/>
-            <MountainListItem navigation={navigation} mountain={"Eiger"} stationID={"JUN"}/>
+            <MountainListItem navigation={navigation} mountain={"Hörnli"} stationID={"HOE"}/>
+            <MountainListItem navigation={navigation} mountain={"Lägern"} stationID={"LAE"}/>
             <MountainListItem navigation={navigation} mountain={"Säntis"} stationID={"SAE"}/>
             <MountainListItem navigation={navigation} mountain={"Mont Dolent"} stationID={"ATT"}/>
             <MountainListItem navigation={navigation} mountain={"Piz Bernina"} stationID={"COV"}/>
