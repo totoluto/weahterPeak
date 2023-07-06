@@ -13,9 +13,23 @@ export default function App(){
           <Stack.Screen
               name="Home"
               component={HomeActivity}
-              options={{title: 'Home'}}
+              options={{
+                  title: 'Home',
+                  headerStyle: { backgroundColor: '#242526' },
+                  headerTitleStyle: { color: '#E4E6EB' },
+
+              }}
           />
-          <Stack.Screen name="Mountain" component={MountainActivity} />
+          <Stack.Screen
+              name="Mountain"
+              component={MountainActivity}
+              options={{
+                  title: 'MountainDetail',
+                  headerStyle: { backgroundColor: '#242526' },
+                  headerTitleStyle: { color: '#E4E6EB' },
+
+              }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
   );
