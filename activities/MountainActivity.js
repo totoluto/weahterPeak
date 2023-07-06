@@ -1,14 +1,13 @@
-import {Text, View, StyleSheet} from "react-native";
+import {View, StyleSheet} from "react-native";
 import {useEffect, useState} from "react";
 import {useNavigation} from "@react-navigation/native";
+import {MountainDataList} from "../components/MountainDataList";
 
 export default function MountainActivity({route}){
     const navigation = useNavigation();
-    const [title, setTitle] = useState("")
     const [id, setId] = useState("")
 
     useEffect(() => {
-        setTitle(route.params.title)
         setId(route.params.id)
         navigation.setOptions({ title: route.params.title});
 
@@ -16,7 +15,7 @@ export default function MountainActivity({route}){
 
     return(
         <View style={styles.container}>
-
+            <MountainDataList id={id}/>
         </View>
     )
 }

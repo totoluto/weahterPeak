@@ -1,4 +1,4 @@
-import {Text, View, StyleSheet} from "react-native";
+import {View, StyleSheet} from "react-native";
 import {CurrentData} from "../components/CurrentLocation";
 import {MountainList} from "../components/MountainList";
 import {useNavigation} from "@react-navigation/native";
